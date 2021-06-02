@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <limits.h>
+
+void solve()
+{
+
+}
+
+int main()
+{
+    int median=0,a=0,count=0;
+    printf("### Enter Non Integer to end Iteration ###\n");
+    do{
+        printf("Enter The %d Element : \n",count);
+        if(count>1)
+        {
+            median+=a; 
+            median = median/2;
+            printf(" Median : %d\n", median);
+        }
+        if(count==1)
+        {
+            printf(" Median : %d\n", a);
+            median+=a;
+        }
+        count++;
+    }while(printf("Input :") && scanf("%d",&a));
+}
